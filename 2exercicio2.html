@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Curso JavaScrip</title>
+    </head>
+    <body>
+      <input type="text" name="nome">
+        <button></button>
+        <button onClick="adicionar()">Adicionar</button>
+        <ul></ul>
+        
+                
+        </div>
+        <script>
+             
+             var nomes = ['Diego', 'Gabriel', 'Lucas'];
+             var list = document.querySelector('ul');
+             var inputElement = document.querySelector('input');
+
+            function addText(text){
+                var liElement = document.createElement('li');
+                var TextElement = document.createTextNode(nome);
+
+                liElement.appendChild(TextElement);
+                list.appendChild(liElement);
+            }
+            function adicionar(){
+                addText(inputElement.value);
+                inputElement.value = "";
+            }
+               for(nome of nomes)   {
+                   adicionar(nome);
+               }
+          
+             
+
+
+
+             
+        </script>
+    </body>
+</html>

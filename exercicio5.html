@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Curso JavaScrip</title>
+    </head>
+    <body>
+        <script>
+            function Objetos(usuarios) {
+                var i;
+                for (i=0;i<2;i++) {                   
+                console.log(usuarios.nome);
+                }
+            }
+        var usuarios = [
+    {
+    nome: "Diego",
+    habilidades: ["Javascript", "ReactJS", "Redux"]
+    },
+    {
+    nome: "Gabriel",
+    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+    }
+    ]; 
+    for (var i of usuarios){
+        console.log("o "+i.nome+" possui as habilidades:", i.habilidades.join());
+        
+    }
+
+    var elements = ['Fire', 'Wind', 'Rain'];
+
+console.log(elements.join());
+// expected output: Fire,Wind,Rain
+
+
+
+
+
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Curso JavaScrip</title>
+    </head>
+    <body>
+        <script>
+         function atualizarColecaoVegetais (vegetais) {
+             var vegetal;
+    if (vegetais.indexOf(vegetal) === -1) {
+        vegetais.push(vegetal);
+        console.log('Nova coleção de vegetais é : ' + vegetais);
+        return true;
+    } else if (vegetais.indexOf(vegetal) > -1) {
+        console.log(vegetal + ' já existe na coleção de vegetais.');
+        return false;
+    }
+}
+
+var vegetais = ['batata', 'tomate', 'pimenta', 'pimentao'];
+
+atualizarColecaoVegetais(vegetais);
+// Nova coleção de vegatais é : batata,tomate,pimenta,pimentao,espinafre
+atualizarColecaoVegetais(vegetais);
+// espinafre já existe na coleção de vegetais.
+
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title> Curso JavaScrip</title>
+    </head>
+    <body>
+        <div id="container">
+      <input type="text" name="nome" placeholder="digite sua tarefas aqui">
+        <button onClick="adicionar()">Adicionar</button>
+        <ul></ul>
+    </div>
+        <script>
+             
+             var nomes = [];
+             var list = document.querySelector('ul');
+             var inputElement = document.querySelector('input');
+             var containerElement= document.querySelector('div');
+             var btnElement = document.querySelector('button');
+
+             list.style.textAlign = 'center';
+             inputElement.style.float = 'center';
+	         inputElement.style.margin = '0px auto';
+             inputElement.style.width = "200px";
+
+            function addText(text){
+                var liElement = document.createElement('li');
+                var TextElement = document.createTextNode(text);
+
+                liElement.appendChild(TextElement);
+                list.appendChild(liElement);
+
+                liElement.style.fontFamily = 'gotham';
+                liElement.style.fontSize = '30px';
+                liElement.style.marginTop = '5px';
+                liElement.style.listStyle = 'none';
+            }
+            function adicionar(){
+                addText(inputElement.value);
+                inputElement.value = "";
+            }
+           
+           
+               for(nome of nomes)   {
+                   adicionar(nome);
+                   
+               }
+          
+             
+
+
+
+             
+        </script>
+    </body>
+</html>

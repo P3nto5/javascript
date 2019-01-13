@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Curso JavaScrip</title>
+    </head>
+    <body>
+        <div id="app" class="box">
+                <input id="nome">
+                <input id="botao" type="text" name="nome" >
+                <button  class="botao"> Enviar</button>
+                
+        </div>
+        <script>
+          var inputElemente = document.querySelector("input[name=nome]");
+            
+            var inputButton = document.querySelector('button.botao');
+
+            inputButton.onclick = function(){
+                var text = inputElemente.value;
+                alert(text);
+            }
+            var LinkElement = document.createElement("a");
+            LinkElement.setAttribute('href', 'https://station.rocketseat.com.br/courses/starter/b6ac7701-5bdd-494c-84fa-990471fcf9f0#1/2');
+
+             var textElement = document.createTextNode('acessar o google');
+             LinkElement.appendChild(textElement);
+              
+            var ContainerElement = document.querySelector('#app');
+            ContainerElement.appendChild(LinkElement);
+
+            var InputElement = document.querySelector("#nome")
+            ContainerElement.removeChild(InputElement)
+
+             var BoxElement = document.querySelector('.box');
+
+             BoxElement.style.width = 100;
+             BoxElement.style.height= 100;
+             BoxElement.style.backgroundColor = 'blue';
+
+        </script>
+    </body>
+</html>
